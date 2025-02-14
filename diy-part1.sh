@@ -26,6 +26,7 @@ sed -i '/apple.com/a\bing.com' $pwdir
 sed -i '/apple.com/a\icloud.com' $pwdir
 sed -i '/bing.com/d' $pwpx
 mv openwrt-passwall/luci-app-passwall/ ./
+rm -rf  openwrt-passwall
 
 #chinadns
 chng_dir='openwrt-passwall-packages/chinadns-ng/Makefile'
