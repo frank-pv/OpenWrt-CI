@@ -14,6 +14,8 @@ rm -rf feeds/luci/applications/luci-app-smartdns
 git clone  --depth=1 --single-branch https://github.com/pymumu/luci-app-smartdns.git feeds/luci/applications/luci-app-smartdns/
 sed -i 's/PKG_SOURCE_VERSION.*/PKG_SOURCE_VERSION:=07c13827bb523519a638214ed7ad76180f71a40a/' feeds/packages/net/smartdns/Makefile
 sed -i 's/PKG_MIRROR_HASH.*/PKG_MIRROR_HASH:=skip/' feeds/packages/net/smartdns/Makefile
+sed -i 's/^PKG_VERSION:=.*/PKG_VERSION:=46/' feeds/packages/net/smartdns/Makefile
+
 
 #frp
 frp_ver=`curl -s https://api.github.com/repos/fatedier/frp/releases/latest|jq -r .tag_name|sed 's/v//'`
