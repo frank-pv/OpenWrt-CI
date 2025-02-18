@@ -3,6 +3,10 @@ name: OpenWrt Builder
 on:
   repository_dispatch:
   workflow_dispatch:
+  #每周执行一次
+  schedule:
+    - cron: '0 2 * * 1'
+
 permissions:
   contents: write
 
