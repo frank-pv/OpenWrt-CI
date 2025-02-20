@@ -1,4 +1,4 @@
-name: OpenWrt Builder
+name: zbt-z8103ax
 
 on:
   repository_dispatch:
