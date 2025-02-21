@@ -3,10 +3,12 @@ name: r5c
 on:
   repository_dispatch:
   workflow_dispatch:
+  schedule:
+      - cron: '0 12 * * 1'
 
 permissions:
   contents: write
-
+  actions: write
 
 env:
   REPO_URL: https://github.com/openwrt/openwrt.git
@@ -145,3 +147,12 @@ jobs:
       with:
         retain_days: 0
         keep_minimum_runs: 2
+
+    - name: Remove old Releases
+      uses: dev-drprasad/delete-older-releases@master
+      if: env.UPLOAD_RELEASE == 'true' && !cancelled()
+      with:
+        keep_latest: 8
+        delete_tags: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
