@@ -11,7 +11,7 @@ mydir='package/dev'
 mkdir -p "$mydir"
 cd $mydir
 mkdir 'my-config'
-cp $GITHUB_WORKSPACE/model/zbt-z8103ax/my-config  my-config/Makefile
+cp $GITHUB_WORKSPACE/model/$DIY_MODEL/my-config  my-config/Makefile
 git clone --depth=1 --single-branch https://github.com/xiaorouji/openwrt-passwall.git
 git clone --depth=1 --single-branch https://github.com/xiaorouji/openwrt-passwall-packages.git
 git clone --depth=1 --single-branch https://github.com/jerrykuku/luci-theme-argon.git
