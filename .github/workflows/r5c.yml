@@ -78,13 +78,13 @@ jobs:
         [ -e $CONFIG_FILE ] && cp $CONFIG_FILE openwrt/.config
         [ -e $CONFIG_FILE ] && cp $CONFIG_FILE openwrt/.config.bak
         echo '---------------copy ok!---------------'
-        cd openwrt&&diff .config .config.bak
 
     - name: Download package
       id: package
       run: |
         cd openwrt
         make defconfig
+        diff .config .config.bak
         make download -j8
 
     - name: Compile the firmware
