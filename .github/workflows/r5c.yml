@@ -12,6 +12,7 @@ env:
   REPO_URL: https://github.com/openwrt/openwrt.git
   REPO_BRANCH: openwrt-24.10
   FEEDS_CONF: feeds.conf.default
+  DIY_MODEL: r5c
   CONFIG_FILE: model/r5c/.config
   DIY_P1_SH: model/r5c/diy-part1.sh
   DIY_P2_SH: model/r5c/diy-part2.sh
