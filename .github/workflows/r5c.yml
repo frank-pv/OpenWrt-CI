@@ -78,6 +78,7 @@ jobs:
         [ -e $CONFIG_FILE ] && cp $CONFIG_FILE openwrt/.config
         [ -e $CONFIG_FILE ] && cp $CONFIG_FILE openwrt/.config.bak
         echo '---------------copy ok!---------------'
+        diff .config .config.bak
 
     - name: Download package
       id: package

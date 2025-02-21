@@ -36,6 +36,3 @@ rm -rf dddd
 
 #update 
 ./scripts/feeds update -a &&./scripts/feeds install -a
-echo '----------------------------------------------------------'
-diff .config .config.bak
-echo '----------------------------------------------------------'
