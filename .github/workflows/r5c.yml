@@ -1,4 +1,4 @@
-name: zbt-z8103ax
+name: r5c
 
 on:
   repository_dispatch:
