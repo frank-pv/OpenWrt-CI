@@ -12,6 +12,7 @@ env:
   REPO_URL: https://github.com/openwrt/openwrt.git
   REPO_BRANCH: openwrt-24.10
   FEEDS_CONF: feeds.conf.default
+  DIY_MODEL: zbt-z8103ax
   CONFIG_FILE: model/zbt-z8103ax/.config
   DIY_P1_SH: model/zbt-z8103ax/diy-part1.sh
   DIY_P2_SH: model/zbt-z8103ax/diy-part2.sh
