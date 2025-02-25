@@ -1,13 +1,43 @@
 
-### x86 OpenWrt 自动编译仓库
+### OpenWrt 自动编译仓库
+
+### 仓库说明：
+1、自用仅供参考<br>
+
+<pre>
+—————————————————————————————————————————————————————————————————————
+//								                                   //
+//								                                   //
+//                           ┏━┓     ┏━┓			               //
+//                          ┏┛ ┻━━━━━┛ ┻┓			               //
+//                          ┃　　　　　　 ┃			               //
+//                          ┃　　　━　　　┃			               //
+//                          ┃　┳┛　  ┗┳　┃			               //
+//                          ┃　　　　　　 ┃			               //
+//                          ┃　　　┻　　　┃			               //
+//                          ┃　　　　　　 ┃                          //
+//                          ┗━┓　　　┏━━━┛			               //
+//                            ┃　　　┃				               //
+//                            ┃　　　┃				               //
+//                            ┃　　　┗━━━━━━━━━┓		               //
+//                            ┃　　　　　　　    ┣┓		           //
+//                            ┃　　　　         ┏┛		           //
+//                            ┗━┓ ┓ ┏━━━┳ ┓ ┏━┛			           //
+//                              ┃ ┫ ┫   ┃ ┫ ┫			           //
+//                              ┗━┻━┛   ┗━┻━┛			           //
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+		神兽保佑       无BUG         不宕机     
+—————————————————————————————————————————————————————————————————————
+
+</pre>
 
 
-## 参考感谢
 
+
+### 参考感谢
 - [Microsoft Azure](https://azure.microsoft.com)
 - [GitHub Actions](https://github.com/features/actions)
 - [OpenWrt](https://github.com/openwrt/openwrt)
-- [coolsnowwolf/lede](https://github.com/coolsnowwolf/lede)
 - [Mikubill/transfer](https://github.com/Mikubill/transfer)
 - [softprops/action-gh-release](https://github.com/softprops/action-gh-release)
 - [Mattraks/delete-workflow-runs](https://github.com/Mattraks/delete-workflow-runs)
