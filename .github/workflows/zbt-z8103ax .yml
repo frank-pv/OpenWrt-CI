@@ -17,6 +17,7 @@ env:
   DIY_P1_SH: model/zbt-z8103ax/diy-part1.sh
   DIY_P2_SH: model/zbt-z8103ax/diy-part2.sh
   MY_CONFIG: model/zbt-z8103ax/my-config
+  MY_DTS:  model/zbt-z8103ax/z8103ax.dts
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
@@ -71,6 +72,7 @@ jobs:
         chmod +x $DIY_P2_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
+        cp -f $GITHUB_WORKSPACE/$MY_DTS ./target/linux/mediatek/dts/mt7981b-zbtlink-zbt-z8103ax.dts
     - name: copy custom .config configuration
       run: |
         [ -e $CONFIG_FILE ] && cp $CONFIG_FILE openwrt/.config
