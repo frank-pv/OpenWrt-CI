@@ -3,6 +3,8 @@ name: zbt-z8103ax
 on:
   repository_dispatch:
   workflow_dispatch:
+  schedule:
+    - cron: '0 8 * * 5'
 
 permissions:
   contents: write
