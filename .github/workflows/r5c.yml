@@ -19,6 +19,7 @@ env:
   DIY_P1_SH: model/r5c/diy-part1.sh
   DIY_P2_SH: model/r5c/diy-part2.sh
   MY_CONFIG: model/r5c/my-config
+  SECRET_PASSWORD: ${{ secrets.PASSWORD }}
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true

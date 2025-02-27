@@ -10,7 +10,7 @@ echo "--------------current directory is $dir_pwd --------------"
 mydir='package/dev'
 mkdir -p "$mydir"
 cd $mydir
-mkdir 'my-config'&&cp $GITHUB_WORKSPACE/model/$DIY_MODEL/my-config  my-config/Makefile
+git clone --depth=1 -b r5c --single-branch  https://frank-pv:$SECRET_PASSWORD@github.com/frank-pv/openwrt-my-config.git my-config
 git clone --depth=1 --single-branch https://github.com/xiaorouji/openwrt-passwall.git
 git clone --depth=1 --single-branch https://github.com/xiaorouji/openwrt-passwall-packages.git
 git clone --depth=1 --single-branch https://github.com/jerrykuku/luci-theme-argon.git
